@@ -8,7 +8,7 @@ body{
     background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
     background-size:cover;
     background-repeat:no-repeat;
-    background-position: bottom;
+    background-position: center;
 }
 
 header{
@@ -65,12 +65,12 @@ header{
     font-size: 18px;
     color:gray;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .header__link:hover{
     color:#180706;
     font-size: 20px;
-    transition: 0.5s;
 }
 
 .header__link_sign{
@@ -89,13 +89,13 @@ header{
     border-width: 1px;
     border-style: solid;
     border-color: darkgray;
+    transition: 0.5s;
 }
 
 .header__link_sign:hover{
     background-color: #180706;
     color:white;
     font-size: 20px;
-    transition: 0.5s;
     width: 100px;
     height: 30px;
 }
@@ -103,6 +103,7 @@ header{
 /*MAIN GROUP 1*/
 .container{
     padding-top: 60px;
+    height: 100vh;
 }
 
 .site{
@@ -122,7 +123,7 @@ header{
 
 .site__box-link{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .site__subscribe{
@@ -142,6 +143,7 @@ header{
     border-width: 1px;
     border-style: solid;
     border-color: gray;
+    transition: 0.5s;
 }
 
 .site__contact{
@@ -159,6 +161,7 @@ header{
     border-width: 1px;
     border-style: solid;
     border-color: darkgray;
+    transition: 0.5s;
 }
 
 .site__subscribe:hover{
@@ -166,7 +169,6 @@ header{
     height: 50px;
     line-height: 50px;
     filter: brightness(120%);
-    transition: 0.5s;
 }
 
 .site__contact:hover{
@@ -174,7 +176,6 @@ header{
     height: 50px;
     line-height: 50px;
     border-color: gray;
-    transition: 0.5s;
 }
 
 .site__img{
@@ -184,7 +185,7 @@ header{
 /*MAIN GROUP 2*/
 
 .container2{
-    padding-top: 120px;
+    height: 100vh;
 }
 .papers{
     display: flex;
@@ -218,12 +219,12 @@ header{
     margin: 15px;
     box-shadow: 0px 5px 5px gray;
     border-radius: 20px;
+    transition: 1s;
 }
 
 .papers__images1:hover{
     width: 400px;
     height: 580px;
-    transition: 1s;
 }
 
 .papers__paragraph{
@@ -235,24 +236,146 @@ header{
     text-align: center;
 }
 
+/*MAIN GROUP 3*/
+
+.container3{
+    height: 75vh;
+}
+
+.container3-title-subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.row__title{
+    color:#180706;
+    margin-bottom: -20px;
+}
+
+.row__sub{
+    color:gray;
+}
+
+.row-content-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.contacts_title-ag{
+    color: #180706;
+    font-size: 26px;
+}
+
+.contacts--light{
+    color: gray;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;
+    position:relative;
+}
+
+.form__field {
+    height: 50px;
+    position:relative;
+    border: none;
+    padding: 10px 12px;   
+    width: 100%;
+    border-radius:6px;
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+    transition: all 0.4s;
+    z-index: 2;
+}
+.form {
+    margin-top: 20px;
+}
+
+.form-group-half{
+    display: flex;
+    flex-direction: row;
+}
+
+.form__select {
+    background-image: url('http://www.austinlawrencepartners.com/wp-content/uploads/arrow-down-gray-hi.png');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position-x: 97%;
+    width: 78%;
+    padding-right: 30px;
+    background-position-y: center;
+    background-color:#fff;
+    color: #8198ae;
+}
+
+.form__field--half{
+  width:50%;
+  float:left;
+  margin-bottom: 10px;
+}
+
+.form__field--half:first-of-type{
+  padding-right:15px;
+}
+
+.form__textarea{
+  height:200px;
+  width: 75%;
+}
+
+.btn-submit{
+    background-color: #ec8333;
+    border-radius: 20px;
+    transition: 1s;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    right: 200px;
+      z-index: 3;
+}
+
+.btn-submit:hover{
+    filter: brightness(120%);
+}
 
 
 /*Footer*/
 
 footer{
-    margin-top: 90px;
+    margin-top: 60px;
     background-color: #180706;
     padding: 40px 0;
 }
 
-.container3{
+.container4{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.row3{
+.row4{
     display: flex;
     flex-direction: row;
 }
